@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrVn = ['chào','goodbye','father','mother','brother','sister'];
+    let arrEng = ['hi','tạm biệt','bố','mẹ','anh trai,em trai','chị gái,em gái'];
+        let wordInput = prompt("Nhập từ cần dịch:")
+        let flag = false;
+        let result = 0;
+        for (let i = 0; i < arrVn.length; i++) {
+            if (wordInput === arrVn[i]) {
+                flag = true;
+                result = arrEng[i];
+                break;
+            }
+            if (wordInput === arrEng[i]) {
+                flag = true;
+                result = arrVn[i];
+                break;
+            }
+            }
+        if (flag){
+            document.write(result);
+        } else {
+            alert("Không tìm thấy ");
+        }
+
+
+
+
+</script>
+</body>
+</html>
